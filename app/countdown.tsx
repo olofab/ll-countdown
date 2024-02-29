@@ -43,14 +43,27 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
 
   return (
     <div className={styles.countdown}>
-            <div className={styles.countdowndigit}>{timeLeft.days}</div>
-            <div className={styles.countdownseparator}>:</div>
+      <div className={styles.numbercontainer}>
+        <div className={styles.countdowndigit}>{timeLeft.days}</div>
+        <div className={styles.title}>dager</div>
+      </div>
 
-      <div className={styles.countdowndigit}>{timeLeft.hours}</div>
       <div className={styles.countdownseparator}>:</div>
-      <div className={styles.countdowndigit}>{timeLeft.minutes}</div>
+
+      <div className={styles.numbercontainer}>
+        <div className={styles.countdowndigit}>{timeLeft.hours}</div>
+        <div className={styles.title}>timer</div>
+      </div>
       <div className={styles.countdownseparator}>:</div>
-      <div className={styles.countdowndigit}>{timeLeft.seconds}</div>
+      <div className={styles.numbercontainer}>
+        <div className={styles.countdowndigit}>{timeLeft.minutes}</div>
+        <div className={styles.title}>minutter</div>
+      </div>
+      <div className={styles.countdownseparator}>:</div>
+      <div className={styles.numbercontainer}>
+        <div className={styles.countdowndigit}>{timeLeft.seconds}</div>
+        <div className={styles.title}>sekunder</div>
+      </div>
     </div>
   );
 };
