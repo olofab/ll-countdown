@@ -205,6 +205,7 @@
 /* styles/globals.css */
 
 .countdown {
+  padding-top: 4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -220,13 +221,12 @@
 
 .countdowndigit {
   background: black; /* Light gray background, change as needed */
-  padding: 10px 20px;
+  padding: 10px 10px;
   margin: 2px;
   border-radius: 5px; /* Optional: adds rounded corners */
 }
 
 .countdownseparator {
-  padding: 0 10px;
 
 }
 
