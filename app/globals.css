@@ -1,0 +1,25 @@
+:root {
+  --blue: #173453;
+  --lightblue: #17345390;
+  --link: #28518F;
+  --beige: #FAF9F6;
+  --white: #ffffff;
+  --copper: #AF704F;
+  --black: #2f2f2f;
+  --grey: #f9f9f9;
+  --error: #FEDFE1;
+  --sucsess: #CCD0BE;
+  --darkgrey: #888;
+  --margin: 1rem 0 1rem 0;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--white);
+  color: var(--black);
+  min-height: 100vh;
+
+}
+
