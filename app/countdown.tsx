@@ -15,7 +15,6 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
       hours: '00',
       minutes: '00',
       seconds: '00',
-      milliseconds: '000',
     };
 
     if (difference > 0) {
@@ -24,7 +23,6 @@ const CountdownTimer: React.FC<CountdownTimerProps> = ({ targetDate }) => {
         hours: Math.floor((difference / (1000 * 60 * 60)) % 24).toString().padStart(2, '0'),
         minutes: Math.floor((difference / 1000 / 60) % 60).toString().padStart(2, '0'),
         seconds: Math.floor((difference / 1000) % 60).toString().padStart(2, '0'),
-        milliseconds: Math.floor(difference % 1000).toString().padStart(3, '0'),
       };
     }
 
