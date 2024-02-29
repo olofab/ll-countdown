@@ -9,7 +9,7 @@ const Home: React.FC = () => {
 
 <div>
       <CountdownTimer targetDate={targetDate} />
-      <img src='./Asics_Logo.svg' className={styles.logo}/>
+      <img src='./asics_logo.png' className={styles.logo}/>
     </div>
    
   );
